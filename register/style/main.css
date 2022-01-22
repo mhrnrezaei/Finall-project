@@ -1,0 +1,204 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background: #2f2f2f;
+  position: relative;
+}
+
+.hero .section {
+  width: 75%;
+  height: 75%;
+  overflow: hidden;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 0 7px black;
+          box-shadow: 0 0 7px black;
+}
+
+.hero .section .sec-left-side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("/register/image/back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .section .sec-left-side .sl-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .section .sec-left-side .sl-box img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.hero .section .sec-left-side .sl-box h1 {
+  font-size: 35px;
+  color: white;
+  letter-spacing: 10px;
+  padding-left: 5px;
+}
+
+.hero .section .sec-left-side .sl-box h2 {
+  padding-left: 40px;
+  color: white;
+}
+
+.hero .section .sec-left-side .sl-box button {
+  width: 70%;
+  height: 37px;
+  display: block;
+  margin-left: 40px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 15px;
+  border: 0;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.hero .section .sec-left-side .sl-box button:hover {
+  background-color: black;
+  color: white;
+}
+
+.hero .section .sec-left-side .special {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .section .sec-right-side {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+  background-color: white;
+}
+
+.hero .section .sec-right-side .sr-box-top h1 {
+  letter-spacing: 15px;
+}
+
+.hero .section .sec-right-side .sr-box-bottom form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .section .sec-right-side .sr-box-bottom form input {
+  width: 80%;
+  height: 45px;
+  margin-top: 15px;
+  border: 0;
+  border-bottom: 2px solid black;
+  padding-left: 10px;
+}
+
+.hero .section .sec-right-side .sr-box-bottom form input:focus {
+  outline: 0;
+}
+
+.hero .section .sec-right-side .sr-box-bottom form #submit {
+  border: 0;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.hero .section .sec-right-side .sr-box-bottom form #submit:hover {
+  background-color: #222121;
+}
+
+.hero .section .sec-right-side .sr-box-bottom form #re-password {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 740px) {
+  .hero .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    height: 90%;
+  }
+  .hero .section .sec-left-side {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .hero .section .sec-left-side .sl-box {
+    padding: 5px;
+  }
+  .hero .section .sec-left-side .sl-box button {
+    display: block;
+    margin: auto;
+  }
+  .hero .section .sec-left-side .sl-box h2 {
+    display: none;
+  }
+  .hero .section .sec-right-side .sr-box-top h1 {
+    text-align: center;
+  }
+  .hero .section .sec-right-side .sr-box-bottom form input {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
